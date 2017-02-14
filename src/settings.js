@@ -7,4 +7,7 @@ export const KEYS = {
   up: 38,       // player 2 up key
   down: 40,     // player 2 down key
   spaceBar: 32, // we'll use this later...
+  n: 78,
+  left: 37,
+  right: 39,
 }
