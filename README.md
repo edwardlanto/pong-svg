@@ -58,3 +58,8 @@ A basic pong game using SVGs.
 ### Understandiing how to get collision. For example, this.x - this.radius <=0; If the position of x - 8 <= you know the collision has took place because 0 is the left side of the board.
 
 
+<!--_____________________________________________________________________________________________________________________-->
+
+#OBJECTIVE#
+
+##The objective of Simpsons Pong is to deflect as much donuts as you can into the other persons side. The right player has a disadvantage, having all balls start at his end, but gains an advantage by having the ability to press 'N' and being able to shoot the ball at any given time. Both players are given the opportunity to press 'M' if needed to gain a biggeer paddle size, but in return a slow speed.
