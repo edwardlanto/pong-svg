@@ -97,7 +97,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'simpsons';\n    src: url(" + __webpack_require__(8) + ");\n    src: url(" + __webpack_require__(8) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(9) + ") format('woff2'),\n         url(" + __webpack_require__(10) + ") format('woff'),\n         url(" + __webpack_require__(11) + "#simpsonfontsimpsonfont) format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n  background-size:cover;\n\n  \n \n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  display:block;\n  margin:0 auto; \n  text-align: center; \n  padding-bottom:70px;\n}\n\n.simpsons{\n  font-family:'simpsons',sans-serif;\n  color:red;\n  font-size:55px;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'simpsons';\n    src: url(" + __webpack_require__(8) + ");\n    src: url(" + __webpack_require__(8) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(9) + ") format('woff2'),\n         url(" + __webpack_require__(10) + ") format('woff'),\n         url(" + __webpack_require__(11) + "#simpsonfontsimpsonfont) format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n  background-size:cover;\n\n  \n \n}\n\n#game{\n  padding-bottom:30px;\n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  display:block;\n  margin:0 auto; \n  text-align: center; \n  padding-bottom:70px;\n}\n\n.simpsons{\n  font-family:'simpsons',sans-serif;\n  color:red;\n  font-size:55px;\n}\n\n", ""]);
 
 	// exports
 
@@ -534,14 +534,12 @@
 
 			// ______________________BALL______________________
 			this.ball = new _Ball2.default(8, this.width, this.height);
-			// this.ball2 = new Ball(20, this.width, this.height);
 			this.ball2 = new _Ball2.default();
 
 			document.addEventListener('keydown', function (event) {
 				switch (event.keyCode) {
 					case _settings.KEYS.n:
-						_this.ball2 = new _Ball2.default(8, _this.width, _this.height);
-						_this.ball2 = new _Ball2.default(8, _this.width, _this.height);
+						_this.ball2 = new _Ball2.default(10, _this.width, _this.height);
 						break;
 
 				}
@@ -607,7 +605,8 @@
 	  spaceBar: 32, // we'll use this later...
 	  n: 78,
 	  left: 37,
-	  right: 39
+	  right: 39,
+	  m: 77
 	};
 
 /***/ },
@@ -702,18 +701,28 @@
 	        case down:
 	          _this.down();
 	          break;
-	        // case left:
-	        // this.left();
-	        // break;
-	        // case right:
-	        // this.right();
-	        // break;
+	        case _settings.KEYS.m:
+	          _this.change();
+	          break;
 
 	      }
 	    });
 	  }
 
 	  _createClass(Paddle, [{
+	    key: 'change',
+	    value: function change() {
+	      if (this.height === 56) {
+	        this.height = 80;
+	        this.speed = 5;
+	        this.width = 8;
+	      } else {
+	        this.height = 56;
+	        this.speed = 10;
+	        this.width = 8;
+	      }
+	    }
+	  }, {
 	    key: 'up',
 	    value: function up() {
 	      this.y = Math.max(0, -1, this.y - this.speed);
@@ -723,11 +732,6 @@
 	    value: function down() {
 	      this.y = Math.min(this.boardHeight - this.height, this.y + this.speed);
 	    }
-
-	    // left(){
-	    // this.x = Math.min(512 - this.width, - this.x + this.speed);
-	    // }
-
 	  }, {
 	    key: 'coordinates',
 	    value: function coordinates(x, y, width, height) {
@@ -776,6 +780,8 @@
 
 	var Ball = function () {
 	    function Ball(radius, boardWidth, boardHeight) {
+	        var _this = this;
+
 	        _classCallCheck(this, Ball);
 
 	        this.radius = radius;
@@ -787,9 +793,30 @@
 	        this.ping2 = new Audio('public/sounds/homer-ping.wav');
 
 	        this.reset();
+
+	        document.addEventListener('keydown', function (event) {
+	            switch (event.keyCode) {
+	                case _settings.KEYS.n:
+	                    _this.ball2 = new Ball(10, _this.width, _this.height);
+	                    break;
+	                case _settings.KEYS.b:
+	                    _this.ballResize();
+	                    break;
+
+	            }
+	        });
 	    }
 
 	    _createClass(Ball, [{
+	        key: 'ballResize',
+	        value: function ballResize() {
+	            if (this.radius === 8) {
+	                this.radius = 2;
+	            } else {
+	                this.radius = 8;
+	            }
+	        }
+	    }, {
 	        key: 'wallCollision',
 	        value: function wallCollision() {
 	            var hitLeft = this.x - this.radius <= 0;

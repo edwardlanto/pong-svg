@@ -89,9 +89,6 @@ body {
   height: 100vh;
   justify-content: center;
   background-size:cover;
-
-  
- 
 }
 
 #game{
@@ -113,6 +110,3 @@ h1 {
   font-size:55px;
 }
 
-h2{
-  
-}

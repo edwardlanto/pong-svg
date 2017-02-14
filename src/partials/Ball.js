@@ -2,20 +2,19 @@ import { SVG_NS } from '../settings'
 
 export default class Ball {
 
-    constructor(radius, boardWidth, boardHeight) {
+    constructor(radius, boardWidth, boardHeight, direction) {
         this.radius = radius;
         this.boardWidth = boardWidth;
         this.boardHeight = boardHeight;
-        this.direction = 1;
+        this.direction = direction;
 
         this.ping1 = new Audio('public/sounds/bart-ping.wav');
         this.ping2 = new Audio('public/sounds/homer-ping.wav')
 
         this.reset();
-
-
-
     }
+
+
 
     wallCollision() {
         const hitLeft = this.x - this.radius <= 0;
@@ -62,6 +61,8 @@ export default class Ball {
     }
 
 
+
+
     reset() {
         this.x = this.boardWidth / 2;
         this.y = this.boardHeight / 2;
@@ -80,6 +81,7 @@ export default class Ball {
     goal(player) {
         player.score++;
         if (player.score >= 2) {
+
 
         }
         this.reset();

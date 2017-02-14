@@ -25,6 +25,8 @@ export default class Game {
 
 
 
+
+
 		// __________________PAUSE__________________	
 
 
@@ -47,6 +49,9 @@ export default class Game {
 			KEYS.a,
 			KEYS.z);
 
+
+
+
 		// ____________________PLAYER 2____________________
 		this.player2 = new Paddle(this.height,
 			this.paddleWidth,
@@ -59,36 +64,29 @@ export default class Game {
 
 
 		// ______________________BALL______________________
-		this.ball = new Ball(8, this.width, this.height)
-		this.ball2 = new Ball();
+		this.ball = new Ball(8, this.width, this.height, 1);
+		this.ball2 = new Ball(10, this.width, this.height, 1);
+		this.ball3 = new Ball(10, this.width, this.height, 1)
+		this.ball4 = new Ball();
 
 
 		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
 				case KEYS.n:
-					this.ball2= new Ball(10, this.width, this.height);
-				break;
+					this.ball4 = new Ball(10, this.width, this.height, -1)
+					break;
 
 
 			}
 
 		})
-	
-
-
 
 		// _____________________SCORE_____________________
 
 		this.player1Score = new Score(this.width / 2 + 50, 40, 30);
 		this.player2Score = new Score(this.width / 2 - 50, 40, 30);
 
-
-
-
-
 	}
-
-
 
 	render() {
 
@@ -107,7 +105,8 @@ export default class Game {
 		this.board.render(svg);
 		this.ball.render(svg, this.player1, this.player2)
 		this.ball2.render(svg, this.player1, this.player2)
-		// this.ball3.render(svg, this.player1, this.player2)
+		this.ball3.render(svg, this.player1, this.player2)
+		this.ball4.render(svg, this.player1, this.player2)
 
 
 		this.player1.render(svg);
