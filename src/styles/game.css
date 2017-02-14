@@ -94,6 +94,10 @@ body {
  
 }
 
+#game{
+  padding-bottom:30px;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem; 
@@ -107,4 +111,8 @@ h1 {
   font-family:'simpsons',sans-serif;
   color:red;
   font-size:55px;
+}
+
+h2{
+  
 }

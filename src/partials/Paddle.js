@@ -20,12 +20,6 @@ switch (event.keyCode) {
   case down:
     this.down();
     break;
-    // case left:
-    // this.left();
-    // break;
-    // case right:
-    // this.right();
-    // break;
 
       }
   });

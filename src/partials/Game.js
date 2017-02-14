@@ -26,13 +26,13 @@ export default class Game {
 
 
 		// __________________PAUSE__________________	
-				
-				
-				document.addEventListener('keydown', event => {
+
+
+		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
-			case KEYS.spaceBar:
-				this.pause = !this.pause;
-				break;
+				case KEYS.spaceBar:
+					this.pause = !this.pause;
+					break;
 
 			}
 		});
@@ -57,24 +57,25 @@ export default class Game {
 			KEYS.down);
 
 
+
 		// ______________________BALL______________________
 		this.ball = new Ball(8, this.width, this.height)
-		// this.ball2 = new Ball(20, this.width, this.height);
 		this.ball2 = new Ball();
-		
+
 
 		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
 				case KEYS.n:
-					this.ball2 = new Ball(8, this.width, this.height);
-					this.ball2 = new Ball(8, this.width, this.height);
+					this.ball2= new Ball(10, this.width, this.height);
 				break;
 
-					
-					
 
 			}
-		});
+
+		})
+	
+
+
 
 		// _____________________SCORE_____________________
 
@@ -82,7 +83,7 @@ export default class Game {
 		this.player2Score = new Score(this.width / 2 - 50, 40, 30);
 
 
-	
+
 
 
 	}

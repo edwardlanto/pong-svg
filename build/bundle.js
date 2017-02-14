@@ -48,7 +48,7 @@
 
 	__webpack_require__(1);
 
-	var _Game = __webpack_require__(9);
+	var _Game = __webpack_require__(13);
 
 	var _Game2 = _interopRequireDefault(_Game);
 
@@ -72,7 +72,7 @@
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(12)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -97,7 +97,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n\n  \n \n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  text-align: center;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'simpsons';\n    src: url(" + __webpack_require__(8) + ");\n    src: url(" + __webpack_require__(8) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(9) + ") format('woff2'),\n         url(" + __webpack_require__(10) + ") format('woff'),\n         url(" + __webpack_require__(11) + "#simpsonfontsimpsonfont) format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n  background-size:cover;\n\n  \n \n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  display:block;\n  margin:0 auto; \n  text-align: center; \n  padding-bottom:70px;\n}\n\n.simpsons{\n  font-family:'simpsons',sans-serif;\n  color:red;\n  font-size:55px;\n}\n", ""]);
 
 	// exports
 
@@ -184,6 +184,30 @@
 
 /***/ },
 /* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/simpsonfont-webfont.eot";
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/simpsonfont-webfont.woff2";
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/simpsonfont-webfont.woff";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/fonts/simpsonfont-webfont.svg";
+
+/***/ },
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -435,7 +459,7 @@
 
 
 /***/ },
-/* 9 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -446,21 +470,21 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _settings = __webpack_require__(10);
+	var _settings = __webpack_require__(14);
 
-	var _Board = __webpack_require__(11);
+	var _Board = __webpack_require__(15);
 
 	var _Board2 = _interopRequireDefault(_Board);
 
-	var _Paddle = __webpack_require__(12);
+	var _Paddle = __webpack_require__(16);
 
 	var _Paddle2 = _interopRequireDefault(_Paddle);
 
-	var _Ball = __webpack_require__(13);
+	var _Ball = __webpack_require__(17);
 
 	var _Ball2 = _interopRequireDefault(_Ball);
 
-	var _Score = __webpack_require__(14);
+	var _Score = __webpack_require__(18);
 
 	var _Score2 = _interopRequireDefault(_Score);
 
@@ -516,7 +540,8 @@
 			document.addEventListener('keydown', function (event) {
 				switch (event.keyCode) {
 					case _settings.KEYS.n:
-						_this.ball2 = new _Ball2.default(20, _this.width, _this.height);
+						_this.ball2 = new _Ball2.default(8, _this.width, _this.height);
+						_this.ball2 = new _Ball2.default(8, _this.width, _this.height);
 						break;
 
 				}
@@ -564,7 +589,7 @@
 	exports.default = Game;
 
 /***/ },
-/* 10 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -586,7 +611,7 @@
 	};
 
 /***/ },
-/* 11 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -597,7 +622,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _settings = __webpack_require__(10);
+	var _settings = __webpack_require__(14);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -640,7 +665,7 @@
 	exports.default = Board;
 
 /***/ },
-/* 12 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -651,7 +676,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _settings = __webpack_require__(10);
+	var _settings = __webpack_require__(14);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -720,7 +745,7 @@
 	      paddle.setAttributeNS(null, 'y', this.y);
 	      paddle.setAttributeNS(null, 'width', this.width);
 	      paddle.setAttributeNS(null, 'height', this.height);
-	      paddle.setAttributeNS(null, 'fill', 'white');
+	      paddle.setAttributeNS(null, 'fill', 'yellow');
 
 	      svg.appendChild(paddle);
 	    }
@@ -732,7 +757,7 @@
 	exports.default = Paddle;
 
 /***/ },
-/* 13 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -745,7 +770,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _settings = __webpack_require__(10);
+	var _settings = __webpack_require__(14);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -756,9 +781,10 @@
 	        this.radius = radius;
 	        this.boardWidth = boardWidth;
 	        this.boardHeight = boardHeight;
-	        this.direction = Math.floor(Math.random() * -5) + Math.random() * 5;
+	        this.direction = 1;
 
-	        this.ping = new Audio('public/sounds/pong-04.wav');
+	        this.ping1 = new Audio('public/sounds/bart-ping.wav');
+	        this.ping2 = new Audio('public/sounds/homer-ping.wav');
 
 	        this.reset();
 	    }
@@ -791,7 +817,7 @@
 
 	                if (this.x + this.radius >= leftX && this.x + this.radius <= rightX && this.y >= topY && this.y <= bottomY) {
 	                    this.vx = -this.vx;
-	                    this.ping.play();
+	                    this.ping1.play();
 	                }
 	            } else {
 	                var _paddle2 = player1.coordinates(player1.x, player1.y, player1.width, player1.height);
@@ -804,7 +830,7 @@
 
 	                if (this.x - this.radius <= _rightX && this.x - this.radius >= _leftX && this.y >= _topY && this.y <= _bottomY) {
 	                    this.vx = -this.vx;
-	                    this.ping.play();
+	                    this.ping2.play();
 	                }
 	            }
 	        }
@@ -826,6 +852,7 @@
 	        key: 'goal',
 	        value: function goal(player) {
 	            player.score++;
+	            if (player.score >= 2) {}
 	            this.reset();
 	        }
 	    }, {
@@ -841,26 +868,10 @@
 	            ball.setAttributeNS(null, 'cx', this.x);
 	            ball.setAttributeNS(null, 'cy', this.y);
 	            ball.setAttributeNS(null, 'r', this.radius);
-	            ball.setAttributeNS(null, 'fill', 'white');
+	            ball.setAttributeNS(null, 'fill', 'none');
+	            ball.setAttributeNS(null, 'stroke-width', '7');
+	            ball.setAttributeNS(null, 'stroke', 'pink');
 	            svg.appendChild(ball);
-
-	            // let ball2 = document.createElementNS(SVG_NS, 'circle');
-	            // ball.setAttributeNS(null, 'cx', this.x);
-	            // ball.setAttributeNS(null, 'cy', this.y);
-	            // ball.setAttributeNS(null, 'r', this.radius);
-	            // ball.setAttributeNS(null, 'fill', 'red');
-	            // svg.appendChild(ball2);
-
-
-	            //         <animate 
-	            //    xlink:href="#boom"
-	            //    attributeName="r"
-	            //    from="65"
-	            //    to="70"
-	            //    dur="2s"
-	            //    begin="0s"
-	            //   repeatCount="indefinite"
-	            //     />
 
 	            var rightGoal = this.x + this.radius >= this.boardWidth;
 	            var leftGoal = this.x - this.radius <= 0;
@@ -881,47 +892,47 @@
 	exports.default = Ball;
 
 /***/ },
-/* 14 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _settings = __webpack_require__(10);
+	var _settings = __webpack_require__(14);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Score = function () {
-	    function Score(x, y, size) {
-	        _classCallCheck(this, Score);
+	  function Score(x, y, size) {
+	    _classCallCheck(this, Score);
 
-	        this.x = x;
-	        this.y = y;
-	        this.size = size;
-	        this.score = 0;
+	    this.x = x;
+	    this.y = y;
+	    this.size = size;
+	    this.score = 0;
+	  }
+
+	  _createClass(Score, [{
+	    key: 'render',
+	    value: function render(svg, score) {
+	      var text = document.createElementNS(_settings.SVG_NS, 'text');
+	      text.setAttributeNS(null, 'x', this.x);
+	      text.setAttributeNS(null, 'y', this.y);
+	      text.setAttributeNS(null, 'font-size', this.size);
+	      text.setAttributeNS(null, 'fill', 'yellow');
+	      text.setAttributeNS(null, 'font-family', 'Silkscreen Web');
+	      text.textContent = score;
+
+	      svg.appendChild(text);
 	    }
+	  }]);
 
-	    _createClass(Score, [{
-	        key: 'render',
-	        value: function render(svg, score) {
-	            var text = document.createElementNS(_settings.SVG_NS, 'text');
-	            text.setAttributeNS(null, 'x', this.x);
-	            text.setAttributeNS(null, 'y', this.y);
-	            text.setAttributeNS(null, 'font-size', this.size);
-	            text.setAttributeNS(null, 'fill', '#fff');
-	            text.setAttributeNS(null, 'font-family', 'Silkscreen Web');
-	            text.textContent = score;
-
-	            svg.appendChild(text);
-	        }
-	    }]);
-
-	    return Score;
+	  return Score;
 	}();
 	//...
 
