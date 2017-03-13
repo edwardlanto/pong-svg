@@ -27,8 +27,5 @@ export default class Board {
     svg.appendChild(rect);
     svg.appendChild(line);
 
-
-
-
   }
 }

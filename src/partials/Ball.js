@@ -42,7 +42,7 @@ export default class Ball {
                 && this.y <= bottomY
             ) {
                 this.vx = -this.vx;
-                this.ping1.play();
+                // this.ping1.play();
             }
         } else {
             let paddle = player1.coordinates(player1.x, player1.y, player1.width, player1.height);
@@ -54,7 +54,7 @@ export default class Ball {
                 && this.y <= bottomY
             ) {
                 this.vx = -this.vx;
-                this.ping2.play();
+                // this.ping2.play();
             }
 
         }
@@ -79,11 +79,7 @@ export default class Ball {
     }
 
     goal(player) {
-        player.score++;
-        if (player.score >= 2) {
 
-
-        }
         this.reset();
 
     }

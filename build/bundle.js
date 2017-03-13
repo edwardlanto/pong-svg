@@ -97,7 +97,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'simpsons';\n    src: url(" + __webpack_require__(8) + ");\n    src: url(" + __webpack_require__(8) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(9) + ") format('woff2'),\n         url(" + __webpack_require__(10) + ") format('woff'),\n         url(" + __webpack_require__(11) + "#simpsonfontsimpsonfont) format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n  background-size:cover;\n\n  \n \n}\n\n#game{\n  padding-bottom:30px;\n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  display:block;\n  margin:0 auto; \n  text-align: center; \n  padding-bottom:70px;\n}\n\n.simpsons{\n  font-family:'simpsons',sans-serif;\n  color:red;\n  font-size:55px;\n}\n\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed, \nfigure, figcaption, footer, header, hgroup, \nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n\tmargin: 0;\n\tpadding: 0;\n\tborder: 0;\n\tfont-size: 100%;\n\tfont: inherit;\n\tvertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, \nfooter, header, hgroup, menu, nav, section {\n\tdisplay: block;\n}\nbody {\n\tline-height: 1;\n}\nol, ul {\n\tlist-style: none;\n}\nblockquote, q {\n\tquotes: none;\n}\nblockquote:before, blockquote:after,\nq:before, q:after {\n\tcontent: '';\n\tcontent: none;\n}\ntable {\n\tborder-collapse: collapse;\n\tborder-spacing: 0;\n}\n\n/**\n * FONTS\n */\n\n@font-face {\n  font-family: 'Silkscreen Web';\n  src: url(" + __webpack_require__(4) + ");\n  src: url(" + __webpack_require__(4) + "?#iefix) format('embedded-opentype'),\n    url(" + __webpack_require__(5) + ") format('woff'),\n    url(" + __webpack_require__(6) + ") format('truetype'),\n    url(" + __webpack_require__(7) + "#silkscreennormal) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n\n@font-face {\n    font-family: 'simpsons';\n    src: url(" + __webpack_require__(8) + ");\n    src: url(" + __webpack_require__(8) + "?#iefix) format('embedded-opentype'),\n         url(" + __webpack_require__(9) + ") format('woff2'),\n         url(" + __webpack_require__(10) + ") format('woff'),\n         url(" + __webpack_require__(11) + "#simpsonfontsimpsonfont) format('svg');\n    font-weight: normal;\n    font-style: normal;\n\n}\n\n/**\n * GAME\n */\n\nhtml {\n  font-size: 16px;\n}\n\nbody {\n  align-items: center;\n  display: flex;\n  font-family: 'Silkscreen Web', monotype;\n  height: 100vh;\n  justify-content: center;\n  background-size:cover;\n}\n\n#game{\n  padding-bottom:30px;\n}\n\nh1 {\n  font-size: 2.5rem;\n  margin-bottom: 1rem; \n  display:block;\n  margin:0 auto; \n  text-align: center; \n  padding-bottom:70px;\n}\n\n.simpsons{\n  font-family:'simpsons',sans-serif;\n  color:red;\n  font-size:55px;\n}\n\n", ""]);
 
 	// exports
 
@@ -526,32 +526,49 @@
 				}
 			});
 
-			// __________________PLAYER 1___________________
-			this.player1 = new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, this.boardGap, (this.height - this.paddleHeight) / 2, _settings.KEYS.a, _settings.KEYS.z);
-
-			// ____________________PLAYER 2____________________
-			this.player2 = new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, this.width - this.boardGap - this.paddleWidth, (this.height - this.paddleHeight) / 2, _settings.KEYS.up, _settings.KEYS.down);
-
 			// ______________________BALL______________________
-			this.ball = new _Ball2.default(8, this.width, this.height);
-			this.ball2 = new _Ball2.default();
+			this.ball = new _Ball2.default(8, this.width, this.height, 1);
+			this.ball2 = new _Ball2.default(10, this.width, this.height, 1);
+			this.ball3 = new _Ball2.default(10, this.width, this.height, 1);
+			this.ball4 = new _Ball2.default(10, this.width, this.height, 1);
 
 			document.addEventListener('keydown', function (event) {
+				var ballArray = [];
 				switch (event.keyCode) {
 					case _settings.KEYS.n:
-						_this.ball2 = new _Ball2.default(10, _this.width, _this.height);
+						_this.ball4 = new _Ball2.default(10, _this.width, _this.height, -1);
+						ballArray.push(new _Ball2.default(100, _this.width, _this.height - 1)); //change march 8th
 						break;
 
-				}
+				} //keyCode
 			});
 
 			// _____________________SCORE_____________________
 
 			this.player1Score = new _Score2.default(this.width / 2 + 50, 40, 30);
 			this.player2Score = new _Score2.default(this.width / 2 - 50, 40, 30);
-		}
+
+			// this.leftScore = this.scoreCreate(this.width / 2 + 50, 40, 30);
+			// this.rightScore = this.scoreCreate(this.width / 2 - 50, 40, 30);
+
+
+			this.leftPaddle = this.paddleChange(this.boardGap, _settings.KEYS.a, _settings.KEYS.z);
+			this.rightPaddle = this.paddleChange(this.width - this.boardGap - this.paddleWidth, _settings.KEYS.up, _settings.KEYS.down);
+		} //constructor
 
 		_createClass(Game, [{
+			key: 'scoreCreate',
+			value: function scoreCreate(scoreCondition) {
+				return new _Score2.default(scoreCondition);
+			}
+		}, {
+			key: 'paddleChange',
+			value: function paddleChange(pos, keyUp, keyDown) {
+				return new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, pos, (this.height - this.paddleHeight) / 2, keyUp, keyDown);
+			} //paddleChange
+
+
+		}, {
 			key: 'render',
 			value: function render() {
 
@@ -560,7 +577,7 @@
 				}
 
 				this.gameElement.innerHTML = '';
-
+				this.ballArray;
 				var svg = document.createElementNS(_settings.SVG_NS, 'svg');
 				svg.setAttributeNS(null, 'width', this.width);
 				svg.setAttributeNS(null, 'height', this.height);
@@ -568,16 +585,16 @@
 				this.gameElement.appendChild(svg);
 
 				this.board.render(svg);
-				this.ball.render(svg, this.player1, this.player2);
-				this.ball2.render(svg, this.player1, this.player2);
-				// this.ball3.render(svg, this.player1, this.player2)
+				this.ball.render(svg, this.leftPaddle, this.rightPaddle);
+				this.ball2.render(svg, this.leftPaddle, this.rightPaddle);
+				this.ball3.render(svg, this.leftPaddle, this.rightPaddle);
+				this.ball4.render(svg, this.leftPaddle, this.rightPaddle);
 
+				this.leftPaddle.render(svg);
+				this.rightPaddle.render(svg);
 
-				this.player1.render(svg);
-				this.player2.render(svg);
-
-				this.player1Score.render(svg, this.player1.score);
-				this.player2Score.render(svg, this.player2.score);
+				this.player1Score.render(svg, this.leftPaddle.score);
+				this.player2Score.render(svg, this.rightPaddle.score);
 			}
 		}]);
 
@@ -606,7 +623,8 @@
 	  n: 78,
 	  left: 37,
 	  right: 39,
-	  m: 77
+	  m: 77,
+	  b: 66
 	};
 
 /***/ },
@@ -713,7 +731,7 @@
 	    key: 'change',
 	    value: function change() {
 	      if (this.height === 56) {
-	        this.height = 80;
+	        this.height = 75;
 	        this.speed = 5;
 	        this.width = 8;
 	      } else {
@@ -779,44 +797,21 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Ball = function () {
-	    function Ball(radius, boardWidth, boardHeight) {
-	        var _this = this;
-
+	    function Ball(radius, boardWidth, boardHeight, direction) {
 	        _classCallCheck(this, Ball);
 
 	        this.radius = radius;
 	        this.boardWidth = boardWidth;
 	        this.boardHeight = boardHeight;
-	        this.direction = 1;
+	        this.direction = direction;
 
 	        this.ping1 = new Audio('public/sounds/bart-ping.wav');
 	        this.ping2 = new Audio('public/sounds/homer-ping.wav');
 
 	        this.reset();
-
-	        document.addEventListener('keydown', function (event) {
-	            switch (event.keyCode) {
-	                case _settings.KEYS.n:
-	                    _this.ball2 = new Ball(10, _this.width, _this.height);
-	                    break;
-	                case _settings.KEYS.b:
-	                    _this.ballResize();
-	                    break;
-
-	            }
-	        });
 	    }
 
 	    _createClass(Ball, [{
-	        key: 'ballResize',
-	        value: function ballResize() {
-	            if (this.radius === 8) {
-	                this.radius = 2;
-	            } else {
-	                this.radius = 8;
-	            }
-	        }
-	    }, {
 	        key: 'wallCollision',
 	        value: function wallCollision() {
 	            var hitLeft = this.x - this.radius <= 0;
@@ -844,7 +839,7 @@
 
 	                if (this.x + this.radius >= leftX && this.x + this.radius <= rightX && this.y >= topY && this.y <= bottomY) {
 	                    this.vx = -this.vx;
-	                    this.ping1.play();
+	                    // this.ping1.play();
 	                }
 	            } else {
 	                var _paddle2 = player1.coordinates(player1.x, player1.y, player1.width, player1.height);
@@ -857,7 +852,7 @@
 
 	                if (this.x - this.radius <= _rightX && this.x - this.radius >= _leftX && this.y >= _topY && this.y <= _bottomY) {
 	                    this.vx = -this.vx;
-	                    this.ping2.play();
+	                    // this.ping2.play();
 	                }
 	            }
 	        }
@@ -879,7 +874,9 @@
 	        key: 'goal',
 	        value: function goal(player) {
 	            player.score++;
-	            if (player.score >= 2) {}
+	            if (player.score >= 2) {
+	                alert('hi');
+	            }
 	            this.reset();
 	        }
 	    }, {

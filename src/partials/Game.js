@@ -10,6 +10,8 @@ export default class Game {
 		this.element = element;
 		this.width = width;
 		this.height = height;
+		this.ballArray = [];
+		this.ballCount = 0;
 
 		this.gameElement = document.getElementById(this.element);
 		this.pause = false;
@@ -23,70 +25,62 @@ export default class Game {
 
 		this.board = new Board(this.width, this.height);
 
-
-
-
-
 		// __________________PAUSE__________________	
-
 
 		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
 				case KEYS.spaceBar:
 					this.pause = !this.pause;
 					break;
-
 			}
 		});
-
-
-		// __________________PLAYER 1___________________
-		this.player1 = new Paddle(this.height,
-			this.paddleWidth,
-			this.paddleHeight,
-			this.boardGap,
-			(this.height - this.paddleHeight) / 2,
-			KEYS.a,
-			KEYS.z);
-
-
-
-
-		// ____________________PLAYER 2____________________
-		this.player2 = new Paddle(this.height,
-			this.paddleWidth,
-			this.paddleHeight,
-			this.width - this.boardGap - this.paddleWidth,
-			(this.height - this.paddleHeight) / 2,
-			KEYS.up,
-			KEYS.down);
-
 
 
 		// ______________________BALL______________________
 		this.ball = new Ball(8, this.width, this.height, 1);
 		this.ball2 = new Ball(10, this.width, this.height, 1);
 		this.ball3 = new Ball(10, this.width, this.height, 1)
-		this.ball4 = new Ball();
+		this.ball4 = new Ball(10, this.width, this.height, 1);
 
 
 		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
 				case KEYS.n:
-					this.ball4 = new Ball(10, this.width, this.height, -1)
+					this.ball4 = new Ball(10, this.width, this.height, -1);
 					break;
-
-
-			}
-
-		})
+			}//keyCode
+		})//EventListener
 
 		// _____________________SCORE_____________________
 
 		this.player1Score = new Score(this.width / 2 + 50, 40, 30);
 		this.player2Score = new Score(this.width / 2 - 50, 40, 30);
 
+
+		// this.leftScore = this.scoreCreate(this.width / 2 + 50, 40, 30);
+		// this.rightScore = this.scoreCreate(this.width / 2 - 50, 40, 30);
+
+		this.leftPaddle = this.paddleChange(this.boardGap, KEYS.a, KEYS.z)
+		this.rightPaddle = this.paddleChange(this.width - this.boardGap - this.paddleWidth, KEYS.up, KEYS.down)
+
+
+	}//constructor
+
+	scoreCreate(scoreCondition) {
+		return new Score(scoreCondition);
 	}
+
+	paddleChange(pos, keyUp, keyDown) {
+		return new Paddle(this.height,
+			this.paddleWidth,
+			this.paddleHeight,
+			pos,
+			(this.height - this.paddleHeight) / 2,
+			keyUp,
+			keyDown
+		);
+
+	}//paddleChange
 
 	render() {
 
@@ -95,7 +89,7 @@ export default class Game {
 		}
 
 		this.gameElement.innerHTML = '';
-
+		this.ballArray;
 		let svg = document.createElementNS(SVG_NS, 'svg');
 		svg.setAttributeNS(null, 'width', this.width);
 		svg.setAttributeNS(null, 'height', this.height);
@@ -103,18 +97,18 @@ export default class Game {
 		this.gameElement.appendChild(svg);
 
 		this.board.render(svg);
-		this.ball.render(svg, this.player1, this.player2)
-		this.ball2.render(svg, this.player1, this.player2)
-		this.ball3.render(svg, this.player1, this.player2)
-		this.ball4.render(svg, this.player1, this.player2)
+		this.ball.render(svg, this.leftPaddle, this.rightPaddle)
+		this.ball2.render(svg, this.leftPaddle, this.rightPaddle)
+		this.ball3.render(svg, this.leftPaddle, this.rightPaddle)
+		this.ball4.render(svg, this.leftPaddle, this.rightPaddle)
 
 
-		this.player1.render(svg);
-		this.player2.render(svg);
+		this.leftPaddle.render(svg);
+		this.rightPaddle.render(svg);
 
 
-		this.player1Score.render(svg, this.player1.score);
-		this.player2Score.render(svg, this.player2.score);
+		this.player1Score.render(svg, this.leftPaddle.score);
+		this.player2Score.render(svg, this.rightPaddle.score);
 
 	}
 
