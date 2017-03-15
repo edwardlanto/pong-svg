@@ -501,6 +501,8 @@
 			this.element = element;
 			this.width = width;
 			this.height = height;
+			this.ballArray = [];
+			this.ballCount = 0;
 
 			this.gameElement = document.getElementById(this.element);
 			this.pause = false;
@@ -516,13 +518,11 @@
 
 			// __________________PAUSE__________________	
 
-
 			document.addEventListener('keydown', function (event) {
 				switch (event.keyCode) {
 					case _settings.KEYS.spaceBar:
 						_this.pause = !_this.pause;
 						break;
-
 				}
 			});
 
@@ -533,15 +533,12 @@
 			this.ball4 = new _Ball2.default(10, this.width, this.height, 1);
 
 			document.addEventListener('keydown', function (event) {
-				var ballArray = [];
 				switch (event.keyCode) {
 					case _settings.KEYS.n:
 						_this.ball4 = new _Ball2.default(10, _this.width, _this.height, -1);
-						ballArray.push(new _Ball2.default(100, _this.width, _this.height - 1)); //change march 8th
 						break;
-
 				} //keyCode
-			});
+			}); //EventListener
 
 			// _____________________SCORE_____________________
 
@@ -550,7 +547,6 @@
 
 			// this.leftScore = this.scoreCreate(this.width / 2 + 50, 40, 30);
 			// this.rightScore = this.scoreCreate(this.width / 2 - 50, 40, 30);
-
 
 			this.leftPaddle = this.paddleChange(this.boardGap, _settings.KEYS.a, _settings.KEYS.z);
 			this.rightPaddle = this.paddleChange(this.width - this.boardGap - this.paddleWidth, _settings.KEYS.up, _settings.KEYS.down);
@@ -566,7 +562,6 @@
 			value: function paddleChange(pos, keyUp, keyDown) {
 				return new _Paddle2.default(this.height, this.paddleWidth, this.paddleHeight, pos, (this.height - this.paddleHeight) / 2, keyUp, keyDown);
 			} //paddleChange
-
 
 		}, {
 			key: 'render',
@@ -873,10 +868,7 @@
 	    }, {
 	        key: 'goal',
 	        value: function goal(player) {
-	            player.score++;
-	            if (player.score >= 2) {
-	                alert('hi');
-	            }
+
 	            this.reset();
 	        }
 	    }, {
