@@ -30,7 +30,7 @@ A basic pong game using SVGs.
 
 * Spacebar
 
-#TECHNOLOGIES USED
+# TECHNOLOGIES USED
 
 *** Webpack ***
 
@@ -45,7 +45,7 @@ A basic pong game using SVGs.
 *** CSS ***
 
 
-#Personal Learnings
+# Personal Learnings
 
 * How to create an SVG in HTML.
 
@@ -65,7 +65,7 @@ A basic pong game using SVGs.
 
 * Understandiing how to get collision. For example, this.x - this.radius <=0; If the position of x - 8 <= you know the collision has took place because 0 is the left side of the board.
 
-#Objective
+# Objective #
 
 * The objective of Simpsons Pong is to deflect as much donuts as you can into the other persons side. 
 
