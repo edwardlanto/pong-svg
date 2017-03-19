@@ -12,17 +12,16 @@ export default class Game {
 		this.height = height;
 		this.ballArray = [];
 		this.ballCount = 0;
-
-		this.gameElement = document.getElementById(this.element);
 		this.pause = false;
-
+		
+		this.gameElement = document.getElementById(this.element);
+		
 		// ________________PADDLE____________________
 		this.boardGap = 10;
 		this.paddleWidth = 8;
 		this.paddleHeight = 56;
 		this.boardGap = 10;
 		this.player1Up = 40;
-
 		this.board = new Board(this.width, this.height);
 
 		// __________________PAUSE__________________	
@@ -42,7 +41,6 @@ export default class Game {
 		this.ball3 = new Ball(10, this.width, this.height, 1)
 		this.ball4 = new Ball(10, this.width, this.height, 1);
 
-
 		document.addEventListener('keydown', event => {
 			switch (event.keyCode) {
 				case KEYS.n:
@@ -56,14 +54,8 @@ export default class Game {
 		this.player1Score = new Score(this.width / 2 + 50, 40, 30);
 		this.player2Score = new Score(this.width / 2 - 50, 40, 30);
 
-
-		// this.leftScore = this.scoreCreate(this.width / 2 + 50, 40, 30);
-		// this.rightScore = this.scoreCreate(this.width / 2 - 50, 40, 30);
-
 		this.leftPaddle = this.paddleChange(this.boardGap, KEYS.a, KEYS.z)
 		this.rightPaddle = this.paddleChange(this.width - this.boardGap - this.paddleWidth, KEYS.up, KEYS.down)
-
-
 	}//constructor
 
 	scoreCreate(scoreCondition) {
@@ -102,14 +94,11 @@ export default class Game {
 		this.ball3.render(svg, this.leftPaddle, this.rightPaddle)
 		this.ball4.render(svg, this.leftPaddle, this.rightPaddle)
 
-
 		this.leftPaddle.render(svg);
 		this.rightPaddle.render(svg);
 
-
 		this.player1Score.render(svg, this.leftPaddle.score);
 		this.player2Score.render(svg, this.rightPaddle.score);
-
 	}
 
 }

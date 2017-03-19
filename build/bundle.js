@@ -503,9 +503,9 @@
 			this.height = height;
 			this.ballArray = [];
 			this.ballCount = 0;
+			this.pause = false;
 
 			this.gameElement = document.getElementById(this.element);
-			this.pause = false;
 
 			// ________________PADDLE____________________
 			this.boardGap = 10;
@@ -513,7 +513,6 @@
 			this.paddleHeight = 56;
 			this.boardGap = 10;
 			this.player1Up = 40;
-
 			this.board = new _Board2.default(this.width, this.height);
 
 			// __________________PAUSE__________________	
@@ -544,9 +543,6 @@
 
 			this.player1Score = new _Score2.default(this.width / 2 + 50, 40, 30);
 			this.player2Score = new _Score2.default(this.width / 2 - 50, 40, 30);
-
-			// this.leftScore = this.scoreCreate(this.width / 2 + 50, 40, 30);
-			// this.rightScore = this.scoreCreate(this.width / 2 - 50, 40, 30);
 
 			this.leftPaddle = this.paddleChange(this.boardGap, _settings.KEYS.a, _settings.KEYS.z);
 			this.rightPaddle = this.paddleChange(this.width - this.boardGap - this.paddleWidth, _settings.KEYS.up, _settings.KEYS.down);
@@ -799,7 +795,6 @@
 	        this.boardWidth = boardWidth;
 	        this.boardHeight = boardHeight;
 	        this.direction = direction;
-
 	        this.ping1 = new Audio('public/sounds/bart-ping.wav');
 	        this.ping2 = new Audio('public/sounds/homer-ping.wav');
 
@@ -856,19 +851,17 @@
 	        value: function reset() {
 	            this.x = this.boardWidth / 2;
 	            this.y = this.boardHeight / 2;
-
 	            this.vy = 0;
 
 	            while (this.vy === 0) {
 	                this.vy = Math.floor(Math.random() * 10 - 5);
-
 	                this.vx = this.direction * (6 - Math.abs(this.vy));
 	            }
 	        }
 	    }, {
 	        key: 'goal',
 	        value: function goal(player) {
-
+	            player.score++;
 	            this.reset();
 	        }
 	    }, {

@@ -7,14 +7,11 @@ export default class Ball {
         this.boardWidth = boardWidth;
         this.boardHeight = boardHeight;
         this.direction = direction;
-
         this.ping1 = new Audio('public/sounds/bart-ping.wav');
         this.ping2 = new Audio('public/sounds/homer-ping.wav')
 
         this.reset();
     }
-
-
 
     wallCollision() {
         const hitLeft = this.x - this.radius <= 0;
@@ -27,7 +24,6 @@ export default class Ball {
 
         } else if (hitTop || hitBottom) {
             this.vy = -this.vy;
-
         }
     }
 
@@ -56,32 +52,24 @@ export default class Ball {
                 this.vx = -this.vx;
                 // this.ping2.play();
             }
-
         }
     }
-
-
-
 
     reset() {
         this.x = this.boardWidth / 2;
         this.y = this.boardHeight / 2;
-
         this.vy = 0;
-
 
         while (this.vy === 0) {
             this.vy = Math.floor(Math.random() * 10 - 5);
-
             this.vx = this.direction * (6 - Math.abs(this.vy));
 
         }
     }
 
     goal(player) {
-
+        player.score++;
         this.reset();
-
     }
 
     render(svg, player1, player2) {
@@ -99,8 +87,7 @@ export default class Ball {
         ball.setAttributeNS(null, 'stroke-width', '7');
         ball.setAttributeNS(null, 'stroke', 'pink')
         svg.appendChild(ball);
-
-
+        
         const rightGoal = this.x + this.radius >= this.boardWidth;
         const leftGoal = this.x - this.radius <= 0;
 
