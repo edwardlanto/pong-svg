@@ -527,17 +527,6 @@
 
 			// ______________________BALL______________________
 			this.ball = new _Ball2.default(8, this.width, this.height, 1);
-			this.ball2 = new _Ball2.default(10, this.width, this.height, 1);
-			this.ball3 = new _Ball2.default(10, this.width, this.height, 1);
-			this.ball4 = new _Ball2.default(10, this.width, this.height, 1);
-
-			document.addEventListener('keydown', function (event) {
-				switch (event.keyCode) {
-					case _settings.KEYS.n:
-						_this.ball4 = new _Ball2.default(10, _this.width, _this.height, -1);
-						break;
-				} //keyCode
-			}); //EventListener
 
 			// _____________________SCORE_____________________
 
@@ -577,9 +566,6 @@
 
 				this.board.render(svg);
 				this.ball.render(svg, this.leftPaddle, this.rightPaddle);
-				this.ball2.render(svg, this.leftPaddle, this.rightPaddle);
-				this.ball3.render(svg, this.leftPaddle, this.rightPaddle);
-				this.ball4.render(svg, this.leftPaddle, this.rightPaddle);
 
 				this.leftPaddle.render(svg);
 				this.rightPaddle.render(svg);
@@ -699,7 +685,7 @@
 	    this.height = height;
 	    this.x = x;
 	    this.y = y;
-	    this.speed = 10;
+	    this.speed = 35;
 	    this.score = 0;
 
 	    document.addEventListener('keydown', function (event) {
@@ -733,7 +719,7 @@
 	  }, {
 	    key: 'up',
 	    value: function up() {
-	      this.y = Math.max(0, -1, this.y - this.speed);
+	      this.y = Math.max(0, 0, this.y - this.speed);
 	    }
 	  }, {
 	    key: 'down',
