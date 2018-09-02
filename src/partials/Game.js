@@ -38,15 +38,6 @@ export default class Game {
 		// ______________________BALL______________________
 		this.ball = new Ball(8, this.width, this.height, 1);
 
-
-		// document.addEventListener('keydown', event => {
-		// 	switch (event.keyCode) {
-		// 		case KEYS.n:
-		// 			this.ball4 = new Ball(10, this.width, this.height, -1);
-		// 			break;
-		// 	}//keyCode
-		// })//EventListener
-
 		// _____________________SCORE_____________________
 
 		this.player1Score = new Score(this.width / 2 + 50, 40, 30);
@@ -88,9 +79,6 @@ export default class Game {
 
 		this.board.render(svg);
 		this.ball.render(svg, this.leftPaddle, this.rightPaddle)
-		// this.ball2.render(svg, this.leftPaddle, this.rightPaddle)
-		// this.ball3.render(svg, this.leftPaddle, this.rightPaddle)
-		// this.ball4.render(svg, this.leftPaddle, this.rightPaddle)
 
 		this.leftPaddle.render(svg);
 		this.rightPaddle.render(svg);
